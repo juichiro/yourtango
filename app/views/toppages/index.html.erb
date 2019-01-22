@@ -1,3 +1,10 @@
 <h1>トップページ</1>
+<% if logged_in? %>
 
+<h2>こんにちは<%= current_user.name %>さん</h2>
+
+<% else %>
 <%= link_to '新規登録',sign_up_path %>
+<%= link_to 'ログイン',login_path %>
+
+<% end %>

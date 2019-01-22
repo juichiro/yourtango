@@ -1,0 +1,16 @@
+<h1>log in</h1>
+
+<%= form_for(:session, url: login_path) do |f| %>
+
+<%= f.label :email, 'メールアドレス' %>
+<%= f.email_field :email %>
+
+<%= f.label :password, 'パスワード' %>
+<%= f.password_field :password %>
+
+<%= f.submit 'ログイン' %>
+
+<% end %>
+
+<p>New User? <%= link_to '新規登録', sign_up_path %></p>
+  
