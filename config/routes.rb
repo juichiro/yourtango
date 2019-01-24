@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  resources :words, only: [:index, :create, :edit,:destroy]
+  get 'words/quiz', to: 'words#quiz',as: 'quiz'
+  get 'words/quiz_answer/:id', to: 'words#quiz_answer',as: 'answer'
   get 'sessions/new'
   get 'sessions/create'
   get 'sessions/destroy'

@@ -1,0 +1,11 @@
+<%= form_for(word) do |f| %>
+
+<%= f.label :word,'英単語' %>
+<%= f.text_field :word %>
+
+<%= f.label :meaning,'意味' %>
+<%= f.text_field :meaning %>
+
+<%= f.submit '単語リストに追加' %>
+
+<% end %>

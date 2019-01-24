@@ -1,0 +1,10 @@
+
+<% @words.each do |a| %>
+<%= a.word %>
+<%= a.meaning %>
+<%= link_to '削除', a, method: :delete %>
+<% end %>
+
+
+
+<%= render 'form', word: @word %>
