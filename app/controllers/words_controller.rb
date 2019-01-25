@@ -1,4 +1,7 @@
 class WordsController < ApplicationController
+  before_action :check_user_logged_in, only: [:index, :quiz]
+  
+  
   def index
     @words = current_user.words
     @word = current_user.words.build
@@ -32,4 +35,11 @@ class WordsController < ApplicationController
   def word_params
   params.require(:word).permit(:word, :meaning)
   end 
+  def check_user_logged_in
+    unless logged_in?
+    redirect_to root_url
+    end 
+  end 
+    
+    
 end
