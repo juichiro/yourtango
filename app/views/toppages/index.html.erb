@@ -1,12 +1,16 @@
-<div class='page-header'>
-<h1>トップページ</1>
-</div> 
 <% if logged_in? %>
 
 <h2>こんにちは<%= current_user.name %>さん</h2>
 
 <% else %>
-<%= link_to '新規登録',sign_up_path %>
-<%= link_to 'ログイン',login_path %>
+<div class="container-fluid ">
+<div class="jumbotron jubotoron_add">
+  
+  <h1>YOUR TANGO</h1>
+  <p>YOUR TANGOとは、、、あなただけの単語リストとあなただけの単語クイズをお手軽に作成して、あなたのボキャビルを手助けするアプリです</p>
+    <%= link_to '新規登録',sign_up_path,class:'btn btn-primary' %>
+    <%= link_to 'ログイン',login_path,class:'btn btn-primary' %>
+</div>
+</div>
 
 <% end %>

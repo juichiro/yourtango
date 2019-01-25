@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+.jubotoron_add{
+  position: relative;
+  height: 100vh;
+  min-height: 300px;
+  background: url(pencil.png)center;
+  background-size:cover;
+}
