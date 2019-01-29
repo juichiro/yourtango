@@ -18,6 +18,38 @@
   position: relative;
   height: 100vh;
   min-height: 300px;
-  background: url(pencil.png)center;
+  background: url(dictionary.jpeg)center;
   background-size:cover;
+  margin-top: -20px;
+}
+div.jumbotron.jubotoron_add h1{
+    background-color: whitesmoke;
+    padding-right: 0px;
+    text-align: center;
+    border: solid;
+}
+div.jumbotron.jubotoron_add p{
+  color:white;
+  border:solid;
+}
+
+@media (min-width: 750px) {
+  /* ウインドウ幅750px以上の時に適用されるスタイル */
+ .btn-move{
+  margin-top: 300px;
+  background-color:whitesmoke;
+  border:solid;
+}
+}
+.btn-move{
+  background-color:whitesmoke;
+  border:solid;
+}
+/*.jumbotron.jubotoron_top_after_login{
+  position: relative;
+  height: 100vh;
+  min-height: 300px;
+  background: url(we_can_do_it.jpeg)center;
+  background-size:cover;
+  margin-top: -20px;
 }

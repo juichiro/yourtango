@@ -1,15 +1,18 @@
 <% if logged_in? %>
-
+<div class="container-fluid ">
+<div class="jumbotron jubotoron_top_after_login">
 <h2>こんにちは<%= current_user.name %>さん</h2>
+</div>
+</div>
 
 <% else %>
 <div class="container-fluid ">
 <div class="jumbotron jubotoron_add">
   
   <h1>YOUR TANGO</h1>
-  <p>YOUR TANGOとは、、、あなただけの単語リストとあなただけの単語クイズをお手軽に作成して、あなたのボキャビルを手助けするアプリです</p>
-    <%= link_to '新規登録',sign_up_path,class:'btn btn-primary' %>
-    <%= link_to 'ログイン',login_path,class:'btn btn-primary' %>
+  <p>YOUR TANGOとは、、、あなただけの単語リストとあなただけの単語クイズをお手軽に作成して、あなたの単語学習を手助けするアプリです</p>
+    <%= link_to '新規登録',sign_up_path,class:'btn btn-default btn-lg btn-move' %>
+    <%= link_to 'ログイン',login_path,class:'btn btn-default btn-lg btn-move' %>
 </div>
 </div>
 
