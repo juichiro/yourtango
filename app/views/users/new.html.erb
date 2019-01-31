@@ -1,18 +1,30 @@
-
+<div class='container-fluid'>
+<div class='row'>
+<div class='col-md-offset-2 col-md-8'>
 <%= form_for(@user) do |f| %>
-
-<%= f.label :name, '名前' %>
-<%= f.text_field :name %>
-
-<%= f.label :email, 'メールアドレス' %>
-<%= f.email_field :email %>
-
-<%= f.label :password, 'パスワード' %>
-<%= f.password_field :password %>
-
-<%= f.label :password_confirmation, 'パスワード確認' %>
-<%= f.password_field :password_confirmation %>
-
-<%= f.submit '新規登録' %>
+<div class='form-group'>
+<%= f.label :name, 'Name' %>
+<%= f.text_field :name, class:'form-control' %>
+</div>
+<div class='form-group'>
+<%= f.label :email, 'Email' %>
+<%= f.email_field :email, class:'form-control' %>
+</div>
+<div class='form-group'>
+<%= f.label :password, 'Password' %>
+<%= f.password_field :password, class:'form-control' %>
+</div>
+<div class='form-group'>
+<%= f.label :password_confirmation, 'Password Confirmation' %>
+<%= f.password_field :password_confirmation, class:'form-control' %>
+</div>
+<%= f.submit '新規登録', class:'btn btn-primary' %>
 
 <% end %>
+
+<p>既存のユーザーの方は</p>
+<%= link_to 'ログインページへ', login_path, class:'btn btn-warning' %>
+
+</div>
+</div>
+</div>

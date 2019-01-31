@@ -1,11 +1,12 @@
 <%= form_for(word) do |f| %>
-
+<div class='form-group'>
 <%= f.label :word,'英単語' %>
-<%= f.text_field :word %>
-
+<%= f.text_field :word, class:'form-control'%>
+</div>
+<div class='form-group'>
 <%= f.label :meaning,'意味' %>
-<%= f.text_field :meaning %>
-
-<%= f.submit '単語リストに追加' %>
+<%= f.text_field :meaning, class:'form-control' %>
+</div>
+<%= f.submit '単語リストに追加',class:'btn btn-primary' %>
 
 <% end %>

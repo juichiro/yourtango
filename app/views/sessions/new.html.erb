@@ -1,16 +1,24 @@
-<h1>log in</h1>
 
+<div class='container-fluid'>
+  <div class='row'>
+  <div class='col-md-offset-2 col-md-8'>
 <%= form_for(:session, url: login_path) do |f| %>
+<div class='form-group'>
+<%= f.label :email, 'Email' %>
+<%= f.email_field :email, class:'form-control' %>
+</div>
 
-<%= f.label :email, 'メールアドレス' %>
-<%= f.email_field :email %>
+<div class='form-group'>
+<%= f.label :password, 'Password' %>
+<%= f.password_field :password, class:'form-control' %>
+</div>
 
-<%= f.label :password, 'パスワード' %>
-<%= f.password_field :password %>
-
-<%= f.submit 'ログイン' %>
-
+<%= f.submit 'ログイン',class:'btn btn-primary margin-top2' %>
 <% end %>
+<p>新規のユーザーの方は</p>
+<%= link_to '新規登録ページへ', sign_up_path, class:'btn btn-warning' %>
 
-<p>New User? <%= link_to '新規登録', sign_up_path %></p>
-  
+</div>
+</div>
+</div>
+
