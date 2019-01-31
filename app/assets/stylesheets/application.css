@@ -48,6 +48,11 @@ div.jumbotron.jubotoron_add p{
 .margin-top1{
   margin-top:20px;
 }
+.words_count{
+  font-size:200px;
+  color:red;
+  text-align:center;
+}
 /*.jumbotron.jubotoron_top_after_login{
   position: relative;
   height: 100vh;

@@ -1,10 +1,16 @@
 <% if logged_in? %>
 <div class="container-fluid ">
-<div class="jumbotron jubotoron_top_after_login">
-<h2>こんにちは<%= current_user.name %>さん</h2>
+<div class='row'>
+<div class='col-md-8 col-md-offset-2 '>
+  <div class="page-header">
+	<h2><%= current_user.name %>の単語登録数</h2>
+</div>
+<div class='words_count'>
+  <p><%= current_user.words.count %></p>
 </div>
 </div>
-
+</div>
+</div>
 <% else %>
 <div class="container-fluid ">
 <div class="jumbotron jubotoron_add">
