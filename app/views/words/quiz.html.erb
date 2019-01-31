@@ -1,4 +1,18 @@
+<div class='container-fluid'>
+<div class='row'>
+<div class='col-md-8 col-md-offset-2 '>
 
-<h1><%= @quiz.meaning %>の英単語は？</h1>
+<div class="page-header">
+	<h2>単語クイズ</h2>
+</div>
 
-<%= link_to '答え', answer_path(@quiz) %>
+
+<h1>「<%= @quiz.meaning %>」の英単語は？</h1>
+
+<%= link_to '答え', answer_path(@quiz),class:'btn btn-default margin-top1' %>
+</div>
+</div>
+</div>
+
+
+

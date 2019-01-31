@@ -1,4 +1,16 @@
-<h1><%= @answer.word %></h1>
+<div class='container-fluid'>
+<div class='row'>
+<div class='col-md-8 col-md-offset-2 '>
+<div class="page-header">
+	<h2>答え</h2>
+</div>
 
-<%= link_to '次のクイズへ', quiz_path %>
-<%= link_to '単語一覧に戻る', words_path %>
+<h1>「<%= @answer.word %>」</h1>
+
+<%= link_to '次のクイズへ', quiz_path, class:'btn btn-default margin-top1' %>
+<%= link_to '単語一覧に戻る', words_path, class:'btn btn-default margin-top1' %>
+
+
+</div>
+</div>
+</div>

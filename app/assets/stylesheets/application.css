@@ -45,6 +45,9 @@ div.jumbotron.jubotoron_add p{
   background-color:whitesmoke;
   border:solid;
 }
+.margin-top1{
+  margin-top:20px;
+}
 /*.jumbotron.jubotoron_top_after_login{
   position: relative;
   height: 100vh;
@@ -53,3 +56,4 @@ div.jumbotron.jubotoron_add p{
   background-size:cover;
   margin-top: -20px;
 }
+
