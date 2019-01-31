@@ -12,6 +12,7 @@ class WordsController < ApplicationController
     if @word.save
       redirect_to words_url
     else
+      @words = current_user.words
       render :index
     end 
   end
