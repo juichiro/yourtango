@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     email = params[:session][:email].downcase
     password = params[:session][:password]
     if login(email,password)
-      redirect_to @user
+      redirect_to words_url
     else
       render :new
     end 
