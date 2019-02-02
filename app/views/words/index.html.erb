@@ -12,6 +12,7 @@
       <td>id</td>
       <td>単語・熟語</td>
       <td>意味</td>
+      <td>削除する</td>
     </tr>
   </thead>
   <tbody>
@@ -21,6 +22,7 @@
       <td><%= word.id %></td>
       <td><%= word.word %></td>
       <td><%= word.meaning %></td>
+      <td><%= link_to '削除', word, method: :delete %></td>
     </tr>
   
 <% end %>

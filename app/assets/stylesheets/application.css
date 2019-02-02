@@ -67,11 +67,15 @@ div.jumbotron.jubotoron_add p{
 }
 div.navbar-header a.navbar-brand{
     background-color: orange;
-    color: black;
+    color:white;
     font-size: large;
 }
 div.collapse.navbar-collapse{
-  background-color:beige;
+  background-color:brown;
+  color:white;
+}
+div.collapse.navbar-collapse ul a {
+  color:white;
 }
 
 /*.jumbotron.jubotoron_top_after_login{
