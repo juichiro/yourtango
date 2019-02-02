@@ -3,7 +3,7 @@ class WordsController < ApplicationController
   
   
   def index
-    @words = current_user.words
+    @words = current_user.words.page(params[:page]).per(20)
     @word = current_user.words.build
   end
 
